@@ -16,10 +16,7 @@ cloudinary.config({
 });
 
 // 2. Connect to MongoDB Atlas
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log("Connected to MongoDB Atlas successfully!"))
+mongoose.connect(process.env.MONGO_URI).then(() => console.log("Connected to MongoDB Atlas successfully!"))
   .catch(err => console.error("MongoDB connection error:", err));
 
 // 3. Define Guest Schema & Model
