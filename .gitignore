@@ -1,0 +1,8 @@
+# Environment Variables & Secrets
+.env
+
+# Node.js Modules (ये बहुत भारी होते हैं, इन्हें कभी गिटहब पर अपलोड नहीं करते)
+node_modules/
+
+# Local Uploads/Database files if any
+uploads/
